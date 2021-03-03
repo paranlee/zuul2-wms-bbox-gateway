@@ -4,11 +4,11 @@
 
 Parse BBOX Parameter and do load balancing geoserver nodes.
 
-this example not use Eureka.
+This example not use Eureka.
 
 ## WMS request
 
-You can find WMS uri specification [here](https://docs.geoserver.org/stable/en/user/services/wms/reference.html).
+You can find WMS URI specification [here](https://docs.geoserver.org/stable/en/user/services/wms/reference.html).
 
 ### Query String Parameters
 
@@ -29,11 +29,11 @@ Example request parameters are
     STYLES: 
     BBOX: 14164752.18857422,4505052.996284179,14169644.158383789,4509944.96609375
 
-### how can i distribute geospatial request?
+### How can i distribute geospatial request?
 
-You can edit [application.properties](#) file,
+You can edit [application.properties](#) file, if you want to add routing nodes. 
 
-if you want to add routing nodes. like this.
+like this.
 
 ` geoserver-0.ribbon.client.NIWSServerListClassName=com.netflix.loadbalancer.ConfigurationBasedServerList`
 
